@@ -1,16 +1,16 @@
 @keyframes zoom-in {
   0% {
-    transform: translateZ(-1000px);
+    transform: translate3d(0px, 1000px, -1000px);
     opacity: 0;
     filter: blur(5px);
   }
   50% {
-    transform: translateZ(0px);
+    transform: translate3d(0px, 0px, 0px);
     opacity: 1;
     filter: blur(0px);
   }
   100% {
-    transform: translateZ(1000px);
+    transform: translate3d(0px, 1000px, 1000px);
     opacity: 0;
     filter: blur(5px);
   }
