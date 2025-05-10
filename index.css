@@ -1,6 +1,6 @@
 @keyframes zoom-in {
   0% {
-    transform: translate3d(0px, -1000px, -1000px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0px, -1000px, -1000px) rotate3d(1, 0, 0, -180deg);
     opacity: 0;
     filter: blur(5px);
   }
@@ -16,7 +16,7 @@
     transform: translate3d(0px, 300px, 500px) rotate3d(1, 0, 0, 0deg);
   }
   100% {
-    transform: translate3d(0px, 1000px, 1000px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0px, 1000px, 1000px) rotate3d(1, 0, 0, -180deg);
     opacity: 0;
     filter: blur(5px);
   }
