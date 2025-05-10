@@ -157,7 +157,7 @@
       &:nth-of-type(47) { grid-area: 4/3 }
       &:nth-of-type(48) { grid-area: 4/4 }
       &:nth-of-type(49) { grid-area: 3/1 }
-      &:nth-of-type(50) { grid-area: 3/2 }
+      &:nth-of-type(50) { grid-area: 4/2 }
       &:nth-of-type(51) { grid-area: 3/3 }
       &:nth-of-type(52) { grid-area: 3/4 }
     }
