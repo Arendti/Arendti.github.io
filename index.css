@@ -1,6 +1,9 @@
 @keyframes turn-left-page {
   0% {
-    transform: translate3d(50dvw, 0dvw, 25dvw) rotate3d(0,1,0,180deg);
+    transform: translateX(50dvw, 0dvw, 0dvw) rotate3d(0,1,0,180deg);
+  }
+  50%{
+    transform: translateZ(25dvw, 0dvw, 25dvw);
   }
   100% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0,0deg);
@@ -11,8 +14,11 @@
   0% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0, 0deg);
   }
+  50%{
+    transform: translateZ(-25dvw, 0dvw, 25dvw);
+  }
   100% {
-    transform: translate3d(-50dvw, 0dvw, 25dvw) rotate3d(0,1,0, -180deg);
+    transform: translate3d(-50dvw, 0dvw, 0dvw) rotate3d(0,1,0, -180deg);
   }
 }
 
