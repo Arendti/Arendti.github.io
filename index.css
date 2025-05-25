@@ -1,6 +1,6 @@
 @keyframes turn-left-page {
   0% {
-    transform: translate(0dvw) rotate3d(0,1,0,180deg);
+    transform: translate(50dvw, 0, 25dvw) rotate3d(0,1,0,180deg);
   }
   100% {
     transform: translate(0%) rotate3d(0,1,0,0deg);
@@ -12,7 +12,7 @@
     transform: translate(0%) rotate3d(0,1,0, 0deg);
   }
   100% {
-    transform: translate(0dvw) rotate3d(0,1,0, -180deg);
+    transform: translate(-50dvw, 0, 25dvw) rotate3d(0,1,0, -180deg);
   }
 }
 
