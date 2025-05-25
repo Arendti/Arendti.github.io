@@ -44,7 +44,7 @@
 
     text-wrap: nowrap;
     text-align: justify;
-    text-justify: inet-word;
+    text-justify: inter-word;
 
     @supports (animation-timeline: scroll()) {
       @media (prefers-reduced-motion: no-preference) {
