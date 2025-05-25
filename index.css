@@ -42,9 +42,9 @@
     font-size: 5vmin;
     font-weight: lighter;
 
-    text-wrap: nowrap;
-    text-align: justify;
-    text-justify: inter-word;
+    text-wrap: pretty;
+    /*text-align: justify;
+    text-justify: inter-word;*/
 
     @supports (animation-timeline: scroll()) {
       @media (prefers-reduced-motion: no-preference) {
