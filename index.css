@@ -18,14 +18,14 @@
 @keyframes turn-right-page {
   0% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0, 0deg);
-    opacity: 0;
+    opacity: 1;
   }
   49%{
-    opacity: 0;
+    opacity: 1;
   }
   50%{
     transform: translate3d(-25dvw, 0dvw, 30dvw) rotate3d(0,1,0,-90deg);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translate3d(-50dvw, 0dvw, 0dvw) rotate3d(0,1,0, -180deg);
