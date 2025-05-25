@@ -29,7 +29,7 @@
 
   display: grid;
   grid: 100dvh / repeat(2, 50dvw);
-  place-items: end stretch;
+  place-items: center stretch;
 
   position: sticky;
   top: 0;
