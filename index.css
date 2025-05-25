@@ -1,9 +1,14 @@
 @keyframes turn-left-page {
   0% {
     transform: translate3d(50dvw, 0dvw, 0dvw) rotate3d(0,1,0,180deg);
+    opacity: 0;
+  }
+  49%{
+    opacity: 0;
   }
   50%{
-    transform: translate3d(25dvw, 0dvw, 26dvw) rotate3d(0,1,0,90deg);
+    transform: translate3d(25dvw, 0dvw, 30dvw) rotate3d(0,1,0,90deg);
+    opacity: 1;
   }
   100% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0,0deg);
@@ -13,9 +18,14 @@
 @keyframes turn-right-page {
   0% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0, 0deg);
+    opacity: 0;
+  }
+  49%{
+    opacity: 0;
   }
   50%{
-    transform: translate3d(-25dvw, 0dvw, 26dvw) rotate3d(0,1,0,-90deg);
+    transform: translate3d(-25dvw, 0dvw, 30dvw) rotate3d(0,1,0,-90deg);
+    opacity: 1;
   }
   100% {
     transform: translate3d(-50dvw, 0dvw, 0dvw) rotate3d(0,1,0, -180deg);
@@ -58,7 +68,7 @@
       @media (prefers-reduced-motion: no-preference) {
         animation: turn-left-page linear both;
         animation-timeline: scroll(root block);
-        will-change: transform;
+        will-change: transform opacity;
       }
     }
 
@@ -68,7 +78,7 @@
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-left-page linear both;
           animation-timeline: scroll(root block);
-          will-change: transform;
+          will-change: transform opacity;
         }
       }
     }
@@ -80,7 +90,7 @@
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-right-page linear both;
           animation-timeline: scroll(root block);
-          will-change: transform;
+          will-change: transform opacity;
         }
       }
     }
