@@ -85,9 +85,9 @@
       }
     }
 
-    &:nth-of-type(1)  { animation-range: 0% 33% }
-    &:nth-of-type(2)  { animation-range: 34% 66% }
-    &:nth-of-type(3)  { animation-range: 67% 99% }
+    &:nth-of-type(1)  { animation-range: 0% 50% }
+    &:nth-of-type(2)  { animation-range: 0% 50% }
+    &:nth-of-type(3)  { animation-range: 51% 100% }
     
     @supports (animation-timeline: scroll()) {
     }
