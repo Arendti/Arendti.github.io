@@ -39,7 +39,7 @@
   > .grid-item {
     transform-style: preserve-3d;
 
-    font-size: 2vmin;
+    font-size: 5vmin;
     font-weight: lighter;
 
     text-wrap: nowrap;
@@ -58,7 +58,7 @@
     }
 
     > b {
-      font-size: 15vmin;
+      font-size: 5vmin;
     }
 
     &:nth-of-type(1)  { animation-range: 40% 50% }
