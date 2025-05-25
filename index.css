@@ -3,7 +3,7 @@
     transform: translate3d(50dvw, 0dvw, 0dvw) rotate3d(0,1,0,180deg);
   }
   50%{
-    transform: translate3d(25dvw, 0dvw, 25dvw) rotate3d(0,1,0,90deg);
+    transform: translate3d(25dvw, 0dvw, 26dvw) rotate3d(0,1,0,90deg);
   }
   100% {
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0,0deg);
@@ -15,7 +15,7 @@
     transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0, 0deg);
   }
   50%{
-    transform: translate3d(-25dvw, 0dvw, 25dvw) rotate3d(0,1,0,-90deg);
+    transform: translate3d(-25dvw, 0dvw, 26dvw) rotate3d(0,1,0,-90deg);
   }
   100% {
     transform: translate3d(-50dvw, 0dvw, 0dvw) rotate3d(0,1,0, -180deg);
@@ -78,7 +78,7 @@
       grid-area: 1/2/1/2;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
-          animation: turn-right-page ; /*linear both;*/
+          animation: turn-right-page linear both;
           animation-timeline: scroll(root block);
           will-change: transform;
         }
