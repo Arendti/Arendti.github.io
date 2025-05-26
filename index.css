@@ -51,13 +51,13 @@
   overflow: clip;
   
   > div {
-    border: 2px solid rgb(254 52 126);
+    border: 2px solid #c0c0c0;
     border-radius: 7px;
     background-color: #010a01;
     padding: 1em;
     height: 95dvh;
     width: 50dvw;
-    color: #bc13fe;
+    color: #Ffd700;
   }
   
   > .grid-item {
