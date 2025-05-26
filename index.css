@@ -41,6 +41,7 @@
 
   display: grid;
   grid: 100dvh / repeat(2, 50dvw);
+  gap: 0;
   place-items: center stretch;
 
   position: sticky;
