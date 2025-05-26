@@ -61,6 +61,7 @@
   
   > .grid-item {
     transform-style: preserve-3d;
+    width: 50dvw;
 
     font-size: 5vmin;
     font-weight: lighter;
@@ -78,8 +79,10 @@
     }
 
     &.left {
-      transform-origin: bottom right;
       grid-area: 1/1/1/1;
+      border-right: 1px solid rgb(254 52 126);
+      border-radius: 5px 0 0 5px;
+      transform-origin: right center; 
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-left-page linear both;
@@ -92,8 +95,10 @@
 
     
     &.right {
-      transform-origin: bottom left;
       grid-area: 1/2/1/2;
+      border-left: 1px solid rgb(254 52 126);
+      border-radius: 0 5px 5px 0;
+      transform-origin: left center;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-right-page linear both;
