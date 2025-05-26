@@ -20,16 +20,8 @@
 }
 
 @keyframes turn-left-page {
-  0% {
-    transform: rotate3d(0,1,0,180deg);
-    visibility: hidden;
-  }
-  /*49.9%{
-    opacity: 0;
-  }*/
-  50%{
+  0%{
     transform: rotate3d(0,1,0,90deg);
-    visibility: visible;
   }
   100% {
     transform: rotate3d(0,1,0,0deg);
@@ -38,18 +30,10 @@
 
 @keyframes turn-right-page {
   0% {
-    transform: rotate3d(0,1,0, 0deg);
-    visibility: visible;
-  }
-  /*49.9%{
-    opacity: 1;
-  }*/
-  50%{
-    transform: rotate3d(0,1,0,-90deg);
-    visibility: hidden;
+    transform: rotate3d(0,1,0,0deg);
   }
   100% {
-    transform: rotate3d(0,1,0, -180deg);
+    transform: rotate3d(0,1,0, -90deg);
   }
 }
 
@@ -83,7 +67,6 @@
     height: 95dvh;
     width: 50dvw;
     /*color: #bc13fe;*/
-    animation: flicker 1.5s infinite alternate;
       color: #fff;
       text-shadow:
           0 0 7px #fff,
@@ -94,6 +77,7 @@
           0 0 92px #0fa,
           0 0 102px #0fa,
           0 0 151px #0fa;
+    animation: flicker 1.5s infinite alternate;
   }
   
   > .grid-item {
@@ -125,7 +109,8 @@
           will-change: transform opacity;
         }
       }
-      &:nth-of-type(1)  { animation-range: 0% 50% }
+      &:nth-of-type(1)  { animation-range: 26% 50% }
+      &:nth-of-type(2)  { animation-range: 76% 100% }
     }
 
     
@@ -139,8 +124,8 @@
           will-change: transform opacity;
         }
       }
-      &:nth-of-type(1)  { animation-range: 51% 100% }
-      &:nth-of-type(2)  { animation-range: 0% 50% }
+      &:nth-of-type(1)  { animation-range: 0% 25% }
+      &:nth-of-type(2)  { animation-range: 51% 75% }
     }
     
     @supports (animation-timeline: scroll()) {
