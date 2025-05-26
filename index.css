@@ -80,7 +80,7 @@
   > div {
     border: 2px solid rgb(254 52 126);
     border-radius: 7px;
-    background-color: #010a01;
+    /*background-color: #010a01;*/
     padding: 1em;
     height: 95dvh;
     width: 50dvw;
