@@ -1,3 +1,24 @@
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
 @keyframes turn-left-page {
   0% {
     transform: rotate3d(0,1,0,180deg);
@@ -34,6 +55,13 @@
   }
 }
 
+.body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #010a01;
+}
+
 .stuck-grid {
   block-size: 100dvh;
   perspective: 100dvw;
@@ -51,12 +79,14 @@
   
   > div {
     border: 2px solid rgb(254 52 126);
-    border-radius: 5px;
-    background-color: rgb(0 0 0 / 1);
+    border-radius: 7px;
+    background-color: #010a01;
     padding: 1em;
     height: 95dvh;
     width: 50dvw;
-    color: #bc13fe;
+    /*color: #bc13fe;*/
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
   }
   
   > .grid-item {
@@ -80,8 +110,6 @@
 
     &.left {
       grid-area: 1/1/1/1;
-      border-right: 1px solid rgb(254 52 126);
-      border-radius: 5px 0 0 5px;
       transform-origin: right center; 
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
@@ -96,8 +124,6 @@
     
     &.right {
       grid-area: 1/2/1/2;
-      border-left: 1px solid rgb(254 52 126);
-      border-radius: 0 5px 5px 0;
       transform-origin: left center;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
