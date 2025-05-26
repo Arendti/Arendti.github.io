@@ -1,40 +1,29 @@
-@keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-      0 0 90px #0fa,
-      0 0 100px #0fa,
-      0 0 150px #0fa;
-  
-  }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
-}
-
 @keyframes turn-left-page {
-  0%{
-    transform: rotate3d(0,1,0,90deg);
-  }
-  100% {
-    transform: rotate3d(0,1,0,0deg);
-  }
+    0%{
+        transform: rotate3d(0,1,0,90deg);
+        opacity: 0;
+    }
+    0.1%{
+        transform: rotate3d(0,1,0,90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate3d(0,1,0,0deg);
+    }
 }
 
 @keyframes turn-right-page {
-  0% {
-    transform: rotate3d(0,1,0,0deg);
-  }
-  100% {
-    transform: rotate3d(0,1,0, -90deg);
-  }
+    0% {
+        transform: rotate3d(0,1,0,0deg);
+    }
+    99.9% {
+        transform: rotate3d(0,1,0, -90deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate3d(0,1,0, -90deg);
+        opacity: 0;
+    }
 }
 
 .body {
@@ -66,18 +55,7 @@
     padding: 1em;
     height: 95dvh;
     width: 50dvw;
-    /*color: #bc13fe;*/
-      color: #fff;
-      text-shadow:
-          0 0 7px #fff,
-          0 0 10px #fff,
-          0 0 21px #fff,
-          0 0 42px #0fa,
-          0 0 82px #0fa,
-          0 0 92px #0fa,
-          0 0 102px #0fa,
-          0 0 151px #0fa;
-    animation: flicker 1.5s infinite alternate;
+    color: #bc13fe;
   }
   
   > .grid-item {
