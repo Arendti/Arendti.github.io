@@ -1,6 +1,5 @@
 @keyframes turn-left-page {
   0% {
-    transform-origin: bottom right;
     transform: rotate3d(0,1,0,180deg);
     opacity: 0;
   }
@@ -14,13 +13,11 @@
   100% {
     transform: rotate3d(0,1,0,0deg);
     opacity: 1;
-    transform-origin: bottom right;
   }
 }
 
 @keyframes turn-right-page {
   0% {
-    transform-origin: bottom left;
     transform: rotate3d(0,1,0, 0deg);
     opacity: 1;
   }
@@ -32,7 +29,6 @@
     opacity: 0;
   }
   100% {
-    transform-origin: bottom left;
     transform: rotate3d(0,1,0, -180deg);
     opacity: 0;
   }
@@ -81,6 +77,7 @@
     }
 
     &.left {
+      transform-origin: bottom right;
       grid-area: 1/1/1/1;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
@@ -94,6 +91,7 @@
 
     
     &.right {
+      transform-origin: bottom left;
       grid-area: 1/2/1/2;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
