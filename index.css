@@ -1,35 +1,37 @@
 @keyframes turn-left-page {
   0% {
-    transform: translate3d(50dvw, 0dvw, 0dvw) rotate3d(0,1,0,180deg);
+    transform-origin: bottom left;
+    transform: rotate3d(0,1,0,180deg);
     opacity: 0;
   }
   49.9%{
     opacity: 0;
   }
   50%{
-    transform: translate3d(25dvw, 0dvw, 30dvw) rotate3d(0,1,0,90deg);
+    transform: rotate3d(0,1,0,90deg);
     opacity: 1;
   }
   100% {
-    transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0,0deg);
+    transform: rotate3d(0,1,0,0deg);
     opacity: 1;
   }
 }
 
 @keyframes turn-right-page {
   0% {
-    transform: translate3d(0dvw, 0dvw, 0dvw) rotate3d(0,1,0, 0deg);
+    transform-origin: bottom right;
+    transform: rotate3d(0,1,0, 0deg);
     opacity: 1;
   }
   49.9%{
     opacity: 1;
   }
   50%{
-    transform: translate3d(-25dvw, 0dvw, 30dvw) rotate3d(0,1,0,-90deg);
+    transform: rotate3d(0,1,0,-90deg);
     opacity: 0;
   }
   100% {
-    transform: translate3d(-50dvw, 0dvw, 0dvw) rotate3d(0,1,0, -180deg);
+    transform: rotate3d(0,1,0, -180deg);
     opacity: 0;
   }
 }
@@ -99,9 +101,9 @@
       }
     }
 
-    &:nth-of-type(1)  { animation-range: 0% 50% }
+    &:nth-of-type(1)  { animation-range: 51% 100% }
     &:nth-of-type(2)  { animation-range: 0% 50% }
-    &:nth-of-type(3)  { animation-range: 51% 100% }
+    &:nth-of-type(3)  { animation-range: 0% 50% }
     
     @supports (animation-timeline: scroll()) {
     }
