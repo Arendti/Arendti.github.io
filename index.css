@@ -9,12 +9,14 @@
     }
     100% {
         transform: rotate3d(0,1,0,0deg);
+        opacity: 1;
     }
 }
 
 @keyframes turn-right-page {
     0% {
         transform: rotate3d(0,1,0,0deg);
+        opacity: 1;
     }
     99.9% {
         transform: rotate3d(0,1,0, -90deg);
