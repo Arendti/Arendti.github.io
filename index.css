@@ -22,36 +22,34 @@
 @keyframes turn-left-page {
   0% {
     transform: rotate3d(0,1,0,180deg);
-    opacity: 0;
+    visibility: hidden;
   }
-  49.9%{
+  /*49.9%{
     opacity: 0;
-  }
+  }*/
   50%{
     transform: rotate3d(0,1,0,90deg);
-    opacity: 1;
+    visibility: visible;
   }
   100% {
     transform: rotate3d(0,1,0,0deg);
-    opacity: 1;
   }
 }
 
 @keyframes turn-right-page {
   0% {
     transform: rotate3d(0,1,0, 0deg);
-    opacity: 1;
+    visibility: visible;
   }
-  49.9%{
+  /*49.9%{
     opacity: 1;
-  }
+  }*/
   50%{
     transform: rotate3d(0,1,0,-90deg);
-    opacity: 0;
+    visibility: hidden;
   }
   100% {
     transform: rotate3d(0,1,0, -180deg);
-    opacity: 0;
   }
 }
 
@@ -80,7 +78,7 @@
   > div {
     border: 2px solid rgb(254 52 126);
     border-radius: 7px;
-    /*background-color: #010a01;*/
+    background-color: #010a01;
     padding: 1em;
     height: 95dvh;
     width: 50dvw;
