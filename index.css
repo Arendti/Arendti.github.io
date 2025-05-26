@@ -87,6 +87,7 @@
           will-change: transform opacity;
         }
       }
+      &:nth-of-type(1)  { animation-range: 0% 50% }
     }
 
     
@@ -99,11 +100,9 @@
           will-change: transform opacity;
         }
       }
+      &:nth-of-type(1)  { animation-range: 51% 100% }
+      &:nth-of-type(2)  { animation-range: 0% 50% }
     }
-
-    &:nth-of-type(1)  { animation-range: 51% 100% }
-    &:nth-of-type(2)  { animation-range: 0% 50% }
-    &:nth-of-type(3)  { animation-range: 0% 50% }
     
     @supports (animation-timeline: scroll()) {
     }
