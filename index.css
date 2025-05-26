@@ -54,7 +54,7 @@
     background-color: rgb(0 0 0 / 1);
     padding: 1em;
     height: 95dvh;
-    width: 45dvw;
+    width: 50dvw;
     color: #bc13fe;
   }
   
@@ -79,7 +79,6 @@
     &.left {
       transform-origin: bottom right;
       grid-area: 1/1/1/1;
-      place-item: end stretch;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-left-page linear both;
@@ -94,7 +93,6 @@
     &.right {
       transform-origin: bottom left;
       grid-area: 1/2/1/2;
-      place-item: start stretch;
       @supports (animation-timeline: scroll()) {
         @media (prefers-reduced-motion: no-preference) {
           animation: turn-right-page linear both;
