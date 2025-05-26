@@ -35,7 +35,7 @@
 }
 
 .stuck-grid {
-  block-size: 100svh;
+  block-size: 100dvh;
   perspective: 100dvw;
   transform-style: preserve-3d;
 
